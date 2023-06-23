@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 data class Food(
     var name:String,
     var protein:Double,
-    var yag:String,
+    var yag:Double,
 
     @PrimaryKey(autoGenerate = true)
     var id:Int=0

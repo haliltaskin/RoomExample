@@ -42,11 +42,11 @@ fun App() {
     val navController= rememberNavController()
     NavHost(navController =navController , startDestination = Pages.FoodListPage.name){
         composable(route = Pages.FoodListPage.name){
-            FoodListPage()
+            FoodListPage(navController)
         }
 
         composable(route = Pages.FoodAddPage.name){
-            FoodAddPage()
+            FoodAddPage(navController)
         }
     }
 
